@@ -1,0 +1,225 @@
+================================================================================
+    INSTRUÇÕES DE INSTALAÇÃO E USO - PROJETO API CEP ABERTO
+================================================================================
+
+📋 PASSO A PASSO PARA COMEÇAR:
+
+1. INSTALAR PYTHON
+   ✓ Certifique-se de ter Python 3.7+ instalado
+   ✓ Verifique com: python --version
+
+2. INSTALAR DEPENDÊNCIAS
+   ✓ Abra o terminal/prompt nesta pasta
+   ✓ Execute: pip install -r requirements.txt
+
+3. CONFIGURAR TOKEN
+   ✓ Obtenha um token grátis em: https://www.cepaberto.com/
+   ✓ Abra o arquivo: config.py
+   ✓ Substitua o token pelo seu
+
+4. TESTAR INSTALAÇÃO
+   ✓ Execute: python teste_rapido.py
+   ✓ Deve aparecer "TODOS OS TESTES PASSARAM!"
+
+5. EXECUTAR PROGRAMA
+   ✓ Execute: python main.py
+   ✓ Ou execute: python exemplos.py
+
+================================================================================
+    COMANDOS IMPORTANTES
+================================================================================
+
+Windows (CMD/PowerShell):
+  cd cep_api_integration
+  pip install -r requirements.txt
+  python teste_rapido.py
+  python main.py
+
+Linux/Mac (Terminal):
+  cd cep_api_integration
+  pip3 install -r requirements.txt
+  python3 teste_rapido.py
+  python3 main.py
+
+================================================================================
+    ARQUIVOS DO PROJETO
+================================================================================
+
+📄 cep_api.py              - Classe principal da API
+📄 main.py                 - Programa principal (EXECUTE ESTE!)
+📄 exemplos.py             - Exemplos de uso
+📄 teste_rapido.py         - Teste de instalação
+📄 config.py               - Configuração (coloque seu token aqui)
+📄 requirements.txt        - Lista de dependências
+📄 README.md              - Documentação completa
+📄 GUIA_RAPIDO.md         - Guia rápido de uso
+📄 INSTRUCOES_INSTALACAO.txt - Este arquivo
+
+================================================================================
+    ESTRUTURA DE APRESENTAÇÃO PARA FACULDADE
+================================================================================
+
+1. INTRODUÇÃO
+   - Objetivo: Integração com API CEP Aberto
+   - Tecnologia: Python + API REST
+   - Funcionalidades: Busca e validação de CEPs
+
+2. DEMONSTRAÇÃO
+   - Execute: python main.py
+   - Mostre a busca de CEPs
+   - Mostre a exportação de dados
+   - Mostre as estatísticas
+
+3. CÓDIGO
+   - Abra cep_api.py
+   - Explique a classe CepAbertoAPI
+   - Mostre o tratamento de erros
+   - Mostre a validação de dados
+
+4. EXEMPLOS PRÁTICOS
+   - Execute: python exemplos.py
+   - Demonstre os 6 exemplos disponíveis
+   - Mostre os arquivos JSON e CSV gerados
+
+5. CONCLUSÃO
+   - Resultados obtidos
+   - Conceitos aplicados
+   - Possíveis melhorias
+
+================================================================================
+    CONCEITOS ABORDADOS NO PROJETO
+================================================================================
+
+✓ Integração com API REST
+✓ Autenticação com token
+✓ Requisições HTTP (GET)
+✓ Validação de dados
+✓ Tratamento de erros e exceções
+✓ Manipulação de JSON
+✓ Exportação de dados (JSON/CSV)
+✓ Interface interativa com usuário
+✓ Documentação de código
+✓ Organização de projeto Python
+✓ Boas práticas de programação
+
+================================================================================
+    CEPS PARA TESTAR NA APRESENTAÇÃO
+================================================================================
+
+CAPITAIS BRASILEIRAS:
+  São Paulo/SP:        01001-000
+  Rio de Janeiro/RJ:   20040-020
+  Belo Horizonte/MG:   30130-100
+  Salvador/BA:         40020-000
+  Brasília/DF:         70040-902
+
+DIFERENTES REGIÕES:
+  Sudeste:   01001000, 20040020, 30130100
+  Sul:       80010000, 90010000, 88010000
+  Nordeste:  40020000, 50010000, 60010000
+  Norte:     69005000, 66010000, 78010000
+
+================================================================================
+    PROBLEMAS COMUNS E SOLUÇÕES
+================================================================================
+
+PROBLEMA: ModuleNotFoundError: No module named 'requests'
+SOLUÇÃO:  pip install -r requirements.txt
+
+PROBLEMA: Erro de autenticação
+SOLUÇÃO:  Verifique o token em config.py
+
+PROBLEMA: CEP não encontrado
+SOLUÇÃO:  Verifique se o CEP está correto (8 dígitos)
+
+PROBLEMA: Timeout
+SOLUÇÃO:  Verifique sua conexão com internet
+
+PROBLEMA: Limite de requisições excedido
+SOLUÇÃO:  Aguarde algumas horas ou faça upgrade do plano
+
+================================================================================
+    PONTOS FORTES DO PROJETO PARA APRESENTAÇÃO
+================================================================================
+
+1. CÓDIGO LIMPO E ORGANIZADO
+   ✓ Comentários e documentação
+   ✓ Separação de responsabilidades
+   ✓ Nomes descritivos de variáveis
+
+2. TRATAMENTO COMPLETO DE ERROS
+   ✓ Try-except em todas as operações
+   ✓ Mensagens de erro claras
+   ✓ Validação de entrada
+
+3. FUNCIONALIDADES AVANÇADAS
+   ✓ Busca individual e múltipla
+   ✓ Histórico de buscas
+   ✓ Estatísticas
+   ✓ Exportação de dados
+
+4. INTERFACE AMIGÁVEL
+   ✓ Menu interativo
+   ✓ Mensagens visuais (emojis)
+   ✓ Feedback claro ao usuário
+
+5. DOCUMENTAÇÃO COMPLETA
+   ✓ README detalhado
+   ✓ Guia rápido
+   ✓ Exemplos práticos
+   ✓ Instruções de instalação
+
+================================================================================
+    RECURSOS ADICIONAIS
+================================================================================
+
+API CEP Aberto:
+  Site: https://www.cepaberto.com/
+  Documentação: https://www.cepaberto.com/api_v3
+
+Python Requests:
+  Documentação: https://requests.readthedocs.io/
+
+Ajuda sobre APIs REST:
+  https://restfulapi.net/
+
+================================================================================
+    DICAS PARA A APRESENTAÇÃO
+================================================================================
+
+1. Comece com o teste_rapido.py para mostrar que funciona
+2. Demonstre o main.py com o menu interativo
+3. Busque CEPs de diferentes regiões
+4. Mostre a exportação de dados (JSON e CSV)
+5. Abra o código e explique as principais funções
+6. Destaque o tratamento de erros
+7. Mostre as estatísticas de uso
+8. Explique os conceitos aplicados
+
+================================================================================
+    CHECKLIST ANTES DA APRESENTAÇÃO
+================================================================================
+
+[ ] Python instalado e funcionando
+[ ] Dependências instaladas (requests)
+[ ] Token configurado em config.py
+[ ] Teste rápido executado com sucesso
+[ ] Programa principal testado
+[ ] Exemplos testados
+[ ] Arquivos JSON/CSV gerados como exemplo
+[ ] README.md revisado
+[ ] Conceitos estudados e compreendidos
+
+================================================================================
+    BOA SORTE COM SEU TRABALHO!
+================================================================================
+
+Este projeto está completo e pronto para apresentação.
+Todos os conceitos de integração e validação de APIs foram aplicados.
+
+Qualquer dúvida, consulte o README.md ou GUIA_RAPIDO.md
+
+🚀 SUCESSO NA SUA APRESENTAÇÃO! 🚀
+
+================================================================================
+
