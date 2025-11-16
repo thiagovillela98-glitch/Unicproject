@@ -1,0 +1,220 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                                                                           ║
+║               COMO EXECUTAR O SIMULADOR - GUIA RÁPIDO                    ║
+║                                                                           ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 🚀 EXECUTAR NO WINDOWS                                                  │
+└─────────────────────────────────────────────────────────────────────────┘
+
+OPÇÃO 1: Duplo Clique (MAIS FÁCIL!)
+   1. Localize o arquivo "main.py"
+   2. Dê DUPLO CLIQUE nele
+   3. Pronto! O simulador abre automaticamente
+
+OPÇÃO 2: Visual Studio Code
+   1. Abra o VS Code
+   2. File → Open Folder → Selecione "simulador_sistema_embarcado"
+   3. Abra o arquivo "main.py"
+   4. Pressione F5 (ou Ctrl+F5)
+   5. OU clique com botão direito → "Run Python File in Terminal"
+
+OPÇÃO 3: Prompt de Comando (CMD)
+   1. Abra o CMD (Win+R, digite "cmd", Enter)
+   2. Navegue até a pasta:
+      cd "C:\Users\Thiago.dasilva\sistemas embarcados\simulador_sistema_embarcado"
+   3. Execute:
+      python main.py
+   
+   Se não funcionar, tente:
+      python3 main.py
+      
+   Ou:
+      py main.py
+
+OPÇÃO 4: PowerShell
+   1. Abra PowerShell (Win+X → Windows PowerShell)
+   2. cd "C:\Users\Thiago.dasilva\sistemas embarcados\simulador_sistema_embarcado"
+   3. python .\main.py
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 🐛 SE DER ERRO                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+
+ERRO: "Python não é reconhecido como comando"
+   → Python não está instalado ou não está no PATH
+   → Solução: Instale Python de https://www.python.org/downloads/
+   → IMPORTANTE: Marque "Add Python to PATH" durante instalação
+
+ERRO: "No module named tkinter"
+   → Tkinter não está instalado (raro no Windows)
+   → Solução: Reinstale Python marcando "tcl/tk and IDLE"
+
+ERRO: Janela não abre / Tela preta
+   → Aguarde alguns segundos
+   → Verifique se há erros no terminal
+   → Tente executar pelo CMD/PowerShell para ver mensagens
+
+ERRO: "Permission denied"
+   → Execute como Administrador
+   → Botão direito no CMD/PowerShell → Executar como Administrador
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ ✅ VERIFICAR SE PYTHON ESTÁ INSTALADO                                   │
+└─────────────────────────────────────────────────────────────────────────┘
+
+1. Abra CMD ou PowerShell
+2. Digite: python --version
+3. Deve mostrar algo como: "Python 3.11.5"
+
+Se não mostrar:
+   → Baixe Python: https://www.python.org/downloads/
+   → Instale marcando "Add Python to PATH"
+   → Reinicie o computador
+   → Teste novamente
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 🎮 COMO USAR O SIMULADOR                                                │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Quando o simulador abrir, você verá:
+
+   [Esquerda]  Display LCD + LEDs + Status
+   [Centro]    Gráficos de temperatura e umidade
+   [Direita]   Controles e log de eventos
+
+CONTROLES:
+
+   🔥 Aquecer      → Aumenta temperatura em +5°C
+   ❄️ Resfriar     → Diminui temperatura em -5°C
+   🔄 Resetar      → Volta ao normal (24°C)
+   🤖 Modo Auto    → Ativa variações automáticas
+
+O QUE OBSERVAR:
+
+   • LCD mostra temperatura e umidade atualizando
+   • LEDs mudam de cor conforme temperatura:
+     - Verde:    Temperatura normal (< 25°C)
+     - Amarelo:  Temperatura elevada (25-30°C)
+     - Vermelho: Temperatura crítica (> 30°C) + Alarme!
+   • Gráficos desenham linhas em tempo real
+   • Log registra todos os eventos
+
+TESTANDO:
+
+   1. Clique em "Aquecer" 2-3 vezes
+   2. Observe LED mudando: Verde → Amarelo → Vermelho
+   3. Quando > 30°C, você ouvirá um "beep" (alarme)
+   4. Veja os gráficos mostrando o aumento
+   5. Clique em "Resetar" para voltar ao normal
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 🎤 PARA APRESENTAÇÃO                                                    │
+└─────────────────────────────────────────────────────────────────────────┘
+
+PREPARAÇÃO (5 minutos antes):
+
+   1. Teste o simulador no computador da apresentação
+   2. Ajuste zoom/tamanho da janela para boa visualização
+   3. Feche outros programas para melhor performance
+   4. Tenha o VS Code aberto com o código (backup)
+
+DURANTE A APRESENTAÇÃO:
+
+   Introdução (1 min):
+      "Desenvolvi um simulador de sistema embarcado que
+       replica o comportamento de um Arduino real, sem
+       necessidade de componentes físicos."
+
+   Demonstração (3 min):
+      1. Execute: python main.py
+      2. Explique cada seção da interface
+      3. Clique em "Aquecer" e mostre transições
+      4. Demonstre alarme acionando (> 30°C)
+      5. Mostre gráficos em tempo real
+      6. Ative modo automático
+
+   Código (1 min):
+      "O sistema usa Python com programação orientada a
+       objetos, multithreading e interface gráfica..."
+      [Mostre rapidamente o código no VS Code]
+
+   Conclusão (30 seg):
+      "Este simulador permite testar toda a lógica de um
+       sistema embarcado sem custo de hardware, facilitando
+       desenvolvimento e apresentação."
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 📊 CONCEITOS QUE O PROJETO DEMONSTRA                                    │
+└─────────────────────────────────────────────────────────────────────────┘
+
+✓ Leitura de sensores (DHT11 simulado)
+✓ Processamento de dados em tempo real
+✓ Sistema de alertas multinível
+✓ Interface LCD (display virtual)
+✓ Controle de atuadores (LEDs, buzzer)
+✓ Logging de eventos
+✓ Multithreading (thread de leitura)
+✓ Visualização de dados (gráficos)
+✓ Integração hardware-software (conceitual)
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 💡 DICAS                                                                │
+└─────────────────────────────────────────────────────────────────────────┘
+
+• Execute o simulador ANTES da apresentação para garantir que funciona
+• Aguarde ~10 segundos para gráficos aparecerem (precisa de dados)
+• Modo automático cria variações senoidais realistas
+• O alarme (beep) só toca quando temperatura > 30°C
+• Redimensione a janela se algum elemento não aparecer
+• Use "Resetar" se os valores ficarem muito extremos
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 🎯 VANTAGENS PARA MENCIONAR                                             │
+└─────────────────────────────────────────────────────────────────────────┘
+
+"Por que criar um simulador ao invés de usar Arduino real?"
+
+✓ Custo ZERO (vs R$ 90-150 de componentes)
+✓ Não depende de hardware funcionando corretamente
+✓ Visualização muito melhor (gráficos, estatísticas)
+✓ Mais fácil de testar e debugar
+✓ Pode rodar em qualquer computador
+✓ Ideal para desenvolvimento e prototipagem
+✓ Demonstra mesmos conceitos de sistemas embarcados
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 📸 PARA DOCUMENTAÇÃO/RELATÓRIO                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Tire screenshots (Win+Shift+S) de:
+
+   1. Tela inicial (temperatura normal, LED verde)
+   2. Temperatura elevada (LED amarelo)
+   3. Temperatura crítica (LED vermelho + alarme)
+   4. Gráficos com várias leituras
+   5. Log com eventos registrados
+   6. Código no VS Code
+
+
+═══════════════════════════════════════════════════════════════════════════
+
+                    ✓ COMANDO RÁPIDO PARA EXECUTAR
+
+    cd simulador_sistema_embarcado
+    python main.py
+
+═══════════════════════════════════════════════════════════════════════════
+
+                           BOA SORTE! 🚀
+

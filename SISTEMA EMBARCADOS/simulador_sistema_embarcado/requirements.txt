@@ -1,0 +1,16 @@
+# Dependências do Simulador de Sistema Embarcado
+# 
+# NOTA: Este projeto usa apenas bibliotecas nativas do Python!
+# Não é necessário instalar nada extra se você tem Python 3.7+
+#
+# tkinter - Interface gráfica (já vem com Python)
+# threading - Multithreading (já vem com Python)
+# random - Geração de números aleatórios (já vem com Python)
+# datetime - Manipulação de datas (já vem com Python)
+# json - Manipulação JSON (já vem com Python)
+
+# Se tkinter não estiver disponível (raro), instale:
+# Ubuntu/Debian: sudo apt-get install python3-tk
+# Fedora: sudo dnf install python3-tkinter
+# Windows/Mac: tkinter já vem instalado com Python
+
